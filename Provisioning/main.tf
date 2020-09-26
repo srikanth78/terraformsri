@@ -16,12 +16,12 @@ terraform {
 
 /* Create Resource group */
 module "rg" {
-  source              = "../../../../../../common/provisioning/modules/azure-network/rg/"
+  source              = "../srikanth78/terraformsri/azure-network/rg/"
   resource_group_name = format("%s%s.%s", var.resource_prefix, var.location, var.virtual_network_name)
   location            = var.location
   tags                = var.tags
 }
-
+/*
 /* Create Virtual Network */
 module "vnet" {
   source                        = "../../../../../../common/provisioning/modules/azure-network/vnet/"
@@ -31,7 +31,6 @@ module "vnet" {
   virtual_network_address_space = var.virtual_network_address_space
   tags                          = var.tags
 }
-
 /* Create Subnet */
 module "subnet_aks" {
   source               = "../../../../../../common/provisioning/modules/azure-network/subnet/"
@@ -69,7 +68,7 @@ module "aks" {
   enable_auto_scaling   = var.enable_auto_scaling
   kubernetes_version    = var.kubernetes_version
 }
-
+*/
 
 /*
 # Create Route Table 
