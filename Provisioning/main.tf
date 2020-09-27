@@ -7,9 +7,10 @@ provider "azurerm" {
 
 terraform {
   backend "azurerm" {
-    storage_account_name = "internaldemoapp"
-    container_name       = "appstore1"
-    access_key           = "LcT0g0zuFni8Js0uY/bdUykQKFDW0lSbGJdZkXNWWH3Ozekz9zJ+zjyLNGSZzTdUNXokyZfFJTZ1losTsBqLtA=="
+      storage_account_name = "__storageaccountname__"
+    container_name       = "__containername__"
+    key                  = "__key__"
+    access_key           = "__accesskey__"
   }
 }
 
