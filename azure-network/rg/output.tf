@@ -1,6 +1,6 @@
 output "output_rg" {
-  value = azurerm_resource_group.resource_group.name
+  value = azurerm_resource_group.rg.name
 }
 output "output_location" {
-  value = azurerm_resource_group.resource_group.location
+  value = azurerm_resource_group.rg.location
 }
