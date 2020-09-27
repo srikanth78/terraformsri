@@ -1,6 +1,6 @@
 /* Hyd-->Dev-->env variables */
 /* resource_prefix               = "internal.dev.azure" */
-resource_group_name           = "Trial_RG"
+resource_group_name           = "trialrg"
 location                      = "East US"
 /* virtual_network_name          = "dev.digital_dev" */
 /* subnet_name                   = ["terraform","devs"] */
