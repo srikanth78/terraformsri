@@ -16,7 +16,7 @@ terraform {
 
 /* Create Resource group */
 module "rg" {
-  source              = "../terraformsri/azure-network/rg/"
+  source              = "../azure-network/rg/"
   resource_group_name = format("%s%s.%s", var.resource_prefix, var.location, var.virtual_network_name)
   location            = var.location
   tags                = var.tags
